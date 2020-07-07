@@ -11,6 +11,7 @@ module.exports = {
         }
       },
       spacing: {
+        // plugin by issam 
         ...(() => {
           let utilities = {}
           for (let i = 0; i <= 128; i++ ) {
@@ -20,6 +21,7 @@ module.exports = {
         })()
       },
       fontSize: {
+        //plugin by issam
         ...(() => {
           let utilities = {}
           for (let i = 0; i <= 64; i++ ) {
