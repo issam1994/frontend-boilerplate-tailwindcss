@@ -17,7 +17,7 @@ To get started:
     ```
 
 3. Start the development server:
-é
+
     ```bash
     # Using npm
     npm run serve
