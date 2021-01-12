@@ -15,5 +15,10 @@
     "cssnano": "^4.1.10",
     "live-server": "^1.2.1",
     "postcss-cli": "^6.1.2"
-  }
+  },
+  "browserslist": [
+    "last 8 versions",
+    "> 1%",
+    "IE 10"
+  ]
 }
