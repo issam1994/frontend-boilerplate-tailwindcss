@@ -1,0 +1,38 @@
+/* font definition  */
+@font-face {
+    font-family: "Product Sans";
+    src: url(../assets/fonts/ProductSans-Regular.ttf);
+  }
+  @font-face {
+    font-family: "Product Sans";
+    src: url(../assets/fonts/ProductSans-Light.ttf);
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: "Product Sans";
+    src: url(../assets/fonts/ProductSans-Bold.ttf);
+    font-weight: 700;
+  }
+/* extra styles  */
+html {
+  font-family: "Product Sans", "sans-serif", "arial", "monospace";
+  font-size: 14px;
+  @screen lg {
+    font-size: 16px;
+  }
+}
+button:hover,
+a:hover {
+  @apply opacity-75;
+}
+button:active,
+a:active {
+  @apply opacity-50;
+}
+button:focus,
+a:focus,
+input:focus,
+textarea:focus,
+div:focus {
+  @apply outline-none;
+}
