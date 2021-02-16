@@ -14,21 +14,36 @@ module.exports = {
         // plugin by issam 
         ...(() => {
           let utilities = {}
-          for (let i = 0; i <= 128; i++ ) {
-            utilities[`${i}-px`] = `${i}px`;
+          for (let i = 0; i <= 128; i++) {
+            utilities[`${i}-px`] = `${i * 0.0625}rem`;
           }
           return utilities
         })()
       },
       fontSize: {
-        //plugin by issam
         ...(() => {
           let utilities = {}
-          for (let i = 0; i <= 64; i++ ) {
-            utilities[`${i}-px`] = `${i}px`;
+          for (let i = 0; i <= 128; i++) {
+            utilities[`${i}-px`] = `${i * 0.0625}rem`;
           }
           return utilities
         })()
+      },
+      screens: {
+        'max-2xl': { 'max': '1535px' },
+        // => @media (max-width: 1535px) { ... }
+
+        'max-xl': { 'max': '1279px' },
+        // => @media (max-width: 1279px) { ... }
+
+        'max-lg': { 'max': '1023px' },
+        // => @media (max-width: 1023px) { ... }
+
+        'max-md': { 'max': '767px' },
+        // => @media (max-width: 767px) { ... }
+
+        'max-sm': { 'max': '639px' },
+        // => @media (max-width: 639px) { ... }
       },
     },
   },
